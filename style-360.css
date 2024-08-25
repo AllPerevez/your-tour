@@ -1,0 +1,492 @@
+@media screen and (max-width: 360px) {
+  h1 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 38.08px;
+    letter-spacing: 0.02em;
+  }
+
+  h2 {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 38.08px;
+    letter-spacing: 0.02em;
+  }
+
+  h3 {
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 27.6px;
+    letter-spacing: 0.04em;
+  }
+
+  .p-big {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.72px;
+  }
+
+  .p-normal {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.72px;
+  }
+
+  .p-small {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.72px;
+    letter-spacing: -0.01em;
+  }
+
+  #wrapper {
+    overflow: scroll;
+  }
+
+  body {
+    grid-template-rows: 95px 1fr 95px;
+  }
+
+  /* HEADER */
+  .header__wrapper {
+    min-width: 360px;
+  }
+
+  .header__container {
+    min-width: 317px;
+    height: 53px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header__list {
+    display: none;
+  }
+
+  .header__paragraph img {
+    width: 133px;
+    height: auto;
+  }
+
+  /* MAIN */
+
+  main {
+    /* height: auto; */
+    height: 7994px;
+  }
+
+  /* PREVIEW */
+
+  .background-img {
+    height: 488px;
+    background-size: cover;
+  }
+
+  .preview {
+    margin: 0 auto;
+    height: 365px;
+  }
+
+  .preview__wrapper {
+    margin-top: 28px;
+    width: 100%;
+  }
+
+  .preview__title {
+    width: 360px;
+    height: 114px;
+  }
+
+  .preview__paragraph {
+    width: 310px;
+    height: 69px;
+  }
+
+  .btn-find-tour  {
+margin-top: 30px;
+  }
+
+  /* ВЫБЕРИ СВОЙ ТУР */
+
+  .choose-tour-tour__wrapper {
+    height: 2174px;
+    width: 360px;
+  }
+
+  .choose-your-tour__paragraph {
+    width: 360px;
+    height: 124px;
+  }
+
+  .choose-your-tour__list {
+    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 290px;
+    height: 56px;
+  }
+
+  .choose-your-tour__cards {
+    width: 318px;
+    height: 1998px;
+  }
+
+  .choose-your-tour__card {
+    width: 318px;
+    height: 318px;
+    border-radius: 20px;
+  }
+
+  .choose-your-tour__card-paragraph {
+    padding: 25px;
+    height: calc(100% - 50px);
+    width: 100%;
+  }
+
+  .card-paragraph__container {
+    width: 268px;
+    height: 64px;
+  }
+
+  .choose-your-tour__learn-more {
+    width: 123px;
+    height: 26px;
+  }
+
+    /* СОБЕРИ СВОЙ ТУР */
+
+    .collect-your-tour_wrapper {
+      max-width: 360px;
+      width: 100%;
+      padding: 0;
+      height: auto;
+      gap: 40px;
+    }
+    
+    .collect-your-tour__form {
+      margin: 0 auto;
+      width: 300px;
+      height: auto;
+      padding: 21px;
+    }
+    
+    .collect-your-tour__paragraph {
+      width: 318px;
+      height: 104px;
+    }    
+    .collect-your-tour__subtitle {
+      width: 318px;
+      height: 46px;
+    }
+    
+    /* ФОРМА  */
+  
+    .collect-your-tour__form {
+      width: 100%; 
+  max-width: 318px; 
+  height: auto;
+  padding: 20px; 
+  box-sizing: border-box; 
+  border-radius: 20px;
+    }
+
+    .form__container {
+      width: 100%;
+      height: 1120px;
+      gap: 30px;
+      padding: 0;
+    }
+
+  
+    .form__container input,
+      .form__container select,
+      .form__comment textarea {
+          width: 100%; 
+          max-width: 278px; 
+          box-sizing: border-box; 
+          padding: 10px; 
+      }
+
+      .form__container select#direction {
+        background: var(--color-beige-100) url('./assets/ic-dropdown.png') no-repeat;
+        background-position: 95%;
+        background-size: 10%;
+        appearance: none;
+        color: var(--color-gray-300);
+      }
+      
+  
+    .form__name,
+    .form__direction,
+    .form__email,
+    .form_tel,
+    .form__date-from,
+    .form__date-till,
+    .form__comment {
+      flex: none;
+      width: 278px;
+      height: auto;
+    }
+  
+    .form__comment
+    textarea {
+      max-width: 278px;
+      width: 100%;
+      height: 163px;
+    }  
+    .radio-btn label {
+      top: 9px;
+    }
+
+    .form__checkbox {
+      width: 100%;
+      height: 30px;
+    }
+
+    .form__buttons {
+      display: flex;
+      width: 278px;
+      height: 47px;
+      gap: 10px;
+    }
+
+    .button__find-tour,
+    .button__reset {
+      width: 134px;
+      height: 47px;
+      padding: 10px 30px;
+      gap: 10px;
+      border-radius: 10px;
+    }
+    
+    
+
+  /* Отзывы наших путешественников */
+
+  .feedback__wrapper {
+    height: auto;
+    width: 360px;
+    gap: 50px;
+  }
+
+  .feedback__paragraph {
+    width: 360px;
+    height: 142px;
+  }
+
+  .feedback__subtitle {
+    width: 318px;
+    height: 46px;
+  }
+
+
+  .feedback__cards {
+    width: 360px;
+    height: auto;
+    gap: 18px;
+  }
+
+  .feedback__card {
+    width: 318px;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .feedback__card-container {
+    padding: 20px;
+    width: calc((100% - 20px) - 20px);
+    height: calc((100% - 20px) - 20px);
+  }
+
+  .feedback-card__person {
+    height: 115px;
+    width: 278px;
+  }
+
+  .feedback-card__person-info {
+    height: 59px;
+  }
+
+  /* ФОТОГРАФИИ ПУТЕШЕСТВИЙ */
+
+  .journey-photos__wrapper {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    gap: 50px;
+  }
+
+  .journey-photos__paragraph {
+    width: 360px;
+    height: 142px;
+    gap: 20px;
+  }
+
+  .journey-photos__title {
+    width: 318px;
+    height: 76px;
+  }
+
+  .journey-photos__subtitle {
+    width: 318px;
+    height: 46px;
+  }
+
+  .journey-photos__album {
+    max-width: 360px;
+    height: auto;
+    padding: 0px 21px;
+    gap: 10px;
+  }
+
+  .journey-photos__album-photo {
+    width: 150px;
+    height: 110px;
+    border-radius: 20px;
+  }
+
+  .journey-photos__album-photo:nth-child(n+5):nth-child(-n+9) {
+    width: 99.33px;
+    height: 110px;
+    border-radius: 20px;
+  }
+
+  .photo-2,
+  .photo-3,
+  .photo-6,
+  .photo-7,
+  .photo-12,
+  .photo-13 {
+    display: none;
+  }
+
+  /* ИСТОРИИ ПУТЕШЕСТВИЙ */
+.journey-history__wrapper {
+  max-width: 360px;
+  height: 1597px;
+  gap: 50px;
+}
+
+.journey-history__paragraph {
+  width: 361px;
+  height: 142px;
+  gap: 20px;
+}
+
+.journey-history__title {
+  width: 319px;
+  height: 76px;
+}
+
+.journey-history__subtitle {
+  width: 319px;
+  height: 46px;
+}
+
+.journey-history__cards {
+  width: 318px;
+height: 1405px;
+gap: 20px;
+}
+
+.journey-history__card {
+  width: 100%;
+  height: 455px;
+  border-radius: 20px;
+}
+
+.journey-history__card-container {
+  padding: 30px;
+  width: calc(100% - 60px);
+  height: calc(100% - 60px);
+  gap: 63px;
+}
+
+.card__paragraph {
+  width: 263px;
+height: 306px;
+gap: 20px;
+}
+.card__title {
+  width: 100%;
+height: 56px;
+}
+.card__subtitle {
+  width: 100%;
+height: 230px;
+}
+
+.journey-history-card__learn-more {
+height: 26px;
+}
+
+.card__learn-more {
+  width: 123px;
+  height: 26px;
+  gap: 15px;
+}
+
+.journey-history__card:hover .card__learn-more {
+  width: 123px;
+  height: 26px;
+  border-radius: 20px;
+}
+
+.card__medias {
+  display: none;
+}
+
+  /* ПРИГЛАШЕНИЕ */
+
+.invite__wrapper {
+  width: 360px;
+height: auto;
+gap: 30px;
+flex-direction: column;
+}
+
+.img__invite {
+  margin: 0 auto;
+  width: 130px;
+height: 130px;
+border-radius: 20px;
+}
+
+.invite__paragraph {
+  text-align: center;
+  margin: 30px auto;
+  width: 291px;
+height: 122px;
+gap: 20px;
+}
+
+
+  /* FOOTER */
+
+  .footer__container {
+    min-width: 317px;
+    height: 53px;
+    justify-content: center;
+  }
+
+  .footer__paragraph .p-normal {
+    text-align: center;
+    height: 23px;
+    line-height: 22.72px;
+  }
+
+  .footer-list__icons {
+    min-width: 317px;
+    height: 23px;
+  }
+
+  li:hover {
+    text-decoration: none;
+    text-underline-offset: none;
+    cursor: auto;
+  }
+
+  .footer-list__icons li:before {
+    padding-right: 5px;
+  }
+}

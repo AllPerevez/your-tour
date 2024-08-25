@@ -1,0 +1,1122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-black: #1b1f2b;
+  --color-white: #ffffff;
+  --color-orange-200: #efa501;
+  --color-orange-100: #f8e6be;
+  --color-green-400: #286562;
+  --color-green-300: #3b7e7b;
+  --color-green-200: #627f7e;
+  --color-green-100: #e0f0e5;
+  --color-gray-300: #a6a6a6;
+  --color-gray-200: #d9dfdb;
+  --color-gray-100: #f1f3f2;
+  --color-beige-200: #f4f0e9;
+  --color-beige-100: #f9f7f4;
+  --background-header-fix: #f3efe899;
+}
+
+body {
+  font-family: "Roboto";
+  color: var(--color-black);
+  background: var(--color-beige-100);
+}
+
+#wrapper {
+  display: grid;
+  grid-template-rows: 88px 1fr 88px;
+  position: relative;
+  margin-top: -5px;
+}
+
+h1 {
+  font-size: 96px;
+  font-weight: 700;
+  line-height: 104.64px;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 59px;
+  font-weight: 700;
+  line-height: 73.16px;
+}
+
+h3 {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 42.7px;
+}
+
+.p-big {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 28.06px;
+}
+
+.p-normal {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28.4px;
+}
+
+.p-small {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24.14px;
+  letter-spacing: -0.01em;
+}
+
+/* HEADER */
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.header__ordinary {
+  /* background: var(--color-black); */
+  color: var(--color-white);
+  transition: background 0.3s, color 0.3s;
+}
+
+.header__fix {
+  background: var(--background-header-fix);
+  color: var(--color-black);
+  transition: background 0.3s, color 0.3s;
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header__container {
+  min-width: 1168px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header__paragraph {
+  width: 181.84px;
+  height: 30.24px;
+}
+
+.header-list__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 468px;
+  height: 28px;
+  list-style-type: none;
+}
+
+.header-list__items li:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  cursor: pointer;
+}
+.header-list__items li:active {
+  text-decoration: underline var(--color-orange-200);
+  color: var(--color-orange-200);
+}
+
+.header-list__items .header__ordinary li:hover {
+  text-decoration: var(--color-black);
+}
+
+.header-list__items .header__fix li:hover {
+  text-decoration: var(--color-black);
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 8924px;
+}
+
+/* PREVIEW */
+
+.background-img {
+  height: 831px;
+  width: 100%;
+  background: url("./assets/header-img.jpg") no-repeat center center;
+  background-size: contain;
+  position: absolute;
+  top: 0;
+  z-index: -3;
+}
+
+.preview {
+  height: 740px;
+  color: var(--color-white);
+}
+
+.preview__wrapper {
+  margin-top: 119px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.preview__title {
+  margin: 0 auto;
+  width: 768px;
+  height: 315px;
+}
+
+.preview__paragraph {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 562px;
+  height: 56px;
+}
+
+.btn-find-tour {
+  border: none;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: var(--color-white);
+  width: 118px;
+  height: 34px;
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+.btn-find-tour:hover {
+  cursor: pointer;
+  background: var(--color-orange-200);
+  color: var(--color-white);
+}
+
+.btn-find-tour:active {
+  background: var(--color-orange-100);
+  color: var(--color-black);
+}
+
+/* ВЫБЕРИ СВОЙ ТУР */
+
+.choose-tour-tour__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1334px;
+  width: 1170px;
+}
+
+.choose-your-tour__paragraph {
+  margin: 0 auto;
+  text-align: center;
+  width: 700px;
+  height: 142px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.choose-your-tour__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 700px;
+  height: 34px;
+  list-style-type: none;
+}
+
+.var_active {
+  color: var(--color-orange-200);
+  text-decoration: underline var(--color-orange-200);
+  text-underline-offset: 6px;
+}
+
+.choose-your-tour__list li:hover:not(.var_active) {
+  color: var(--color-black);
+  text-decoration: underline var(--color-black);
+  text-underline-offset: 6px;
+  cursor: pointer;
+}
+
+.choose-your-tour__cards {
+  width: 1170px;
+  height: 1092px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.choose-your-tour__card {
+  width: 370px;
+  height: 531px;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+}
+
+.choose-your-tour__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+  transition: transform 0.3s ease;
+}
+
+.card-1::before {
+  background-image: url("./assets/card_tour_photo-1.jpg");
+}
+
+.card-2::before {
+  background-image: url("./assets/card_tour_photo-2.jpg");
+}
+
+.card-3::before {
+  background-image: url("./assets/card_tour_photo-3.jpg");
+}
+
+.card-4::before {
+  background-image: url("./assets/card_tour_photo-4.jpg");
+}
+
+.card-5::before {
+  background-image: url("./assets/card_tour_photo-5.jpg");
+}
+
+.card-6::before {
+  background-image: url("./assets/card_tour_photo-6.jpg");
+}
+
+.choose-your-tour__card:hover::before {
+  transform: scale(1.2);
+}
+
+.choose-your-tour__card-paragraph {
+  background: linear-gradient(360deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.06) 48.44%,
+      rgba(0, 0, 0, 0.5) 100%);
+  height: calc((100% - 50px) - 50px);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.card-paragraph__container {
+  width: 270px;
+  height: 126px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-your-tour__learn-more {
+  width: 159px;
+  height: 28px;
+  gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.choose-your-tour__card:hover {
+  position: relative;
+  cursor: pointer;
+}
+
+.choose-your-tour__card:hover .choose-your-tour__learn-more {
+  background: var(--color-green-400);
+  position: absolute;
+  width: 159px;
+  height: 28px;
+  padding: 7px 20px;
+  bottom: 43px;
+  left: 30px;
+  border-radius: 50px;
+}
+
+.choose-your-tour__card:hover .choose-your-tour__learn-more:active {
+  background: var(--color-orange-200);
+  position: absolute;
+  width: 159px;
+  height: 28px;
+  padding: 7px 20px;
+  bottom: 43px;
+  left: 30px;
+  border-radius: 50px;
+}
+
+.learn-more__arrow {
+  fill: var(--color-white);
+  margin-top: 1px;
+}
+
+/* СОБЕРИ СВОЙ ТУР */
+
+.collect-your-tour_wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 1170px;
+  height: 1245px;
+}
+
+.collect-your-tour__paragraph {
+  margin: 0 auto;
+  text-align: center;
+  width: 458px;
+  height: 159px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.collect-your-tour__subtitle {
+  margin: 0 auto;
+  width: 418px;
+  height: 56px;
+  color: var(--color-gray-300);
+}
+
+/* ФОРМА  */
+
+.collect-your-tour__form {
+  background: var(--color-white);
+  width: 100%;
+  height: 986px;
+  border-radius: 50px;
+}
+
+.form__container {
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 1030px;
+  justify-content: space-between;
+  gap: 33px;
+}
+
+.form__name,
+.form__direction,
+.form__email,
+.form_tel,
+.form__date-from,
+.form__date-till {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1 calc(50% - 33px);
+}
+
+.form__comment {
+  width: 1030px;
+  height: 188px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form__comment,
+.form__age-confirmation {
+  flex-basis: 100%;
+}
+
+.form__container label {
+  margin-bottom: 8px;
+}
+
+.form__container input,
+select,
+.textarea {
+  background: var(--color-beige-100);
+  border: 1px solid var(--color-beige-200);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form__container select {
+  height: 100%;
+}
+
+.form__container select#direction {
+  background: var(--color-beige-100) url('./assets/ic-dropdown.png') no-repeat;
+  background-position: 95%;
+  appearance: none;
+  color: var(--color-gray-300);
+}
+
+.form__container select#direction:hover {
+  background-color: var(--color-beige-200);
+  cursor: pointer;
+}
+.active-variant input {
+  color: var(--color-black);
+}
+
+
+.textarea {
+  height: 60%;
+  resize: none;
+}
+
+.form__container input {
+  cursor: pointer;
+}
+
+.form__container input:focus,
+select:focus,
+textarea:focus {
+  outline: 1px solid var(--color-gray-300);
+}
+
+.radio-container {
+  display: inline-flex;
+  width: 166px;
+  height: 28px;
+  gap: 31px;
+}
+
+.form__checkbox input,
+.radio-container input {
+  display: none;
+}
+
+.radio-btn {
+  position: relative;
+  display: flex;
+  align-items: end;
+  width: 63px;
+}
+.radio-btn label {
+  position: absolute; 
+  left: 30px;
+  top: 5px;
+}
+
+.radio {
+  width: 18px;
+  height: 18px;
+  background: url("./assets/radiobutton.png") no-repeat center center;
+  background-size: contain;
+}
+
+.radio-btn input:checked + .radio {
+  background: url("./assets/radiobutton_active.png") no-repeat center center;
+  background-size: contain;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  width: 18px;
+  height: 18px;
+  left: 0;
+  background: url("./assets/checkbox.png") no-repeat center center;
+  background-size: contain;
+}
+
+.form__checkbox input:checked + .checkmark {
+  background: url("./assets/checkbox_checked.png") no-repeat center center;
+  background-size: contain;
+}
+
+.form__checkbox {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.license__text {
+  position: absolute;
+left: 30px;
+}
+
+.form__checkbox {
+  width: 100%;
+}
+
+.license__text {
+  color: var(--color-gray-300);
+}
+
+.license__span {
+  color: var(--color-black);
+}
+
+.license__span:hover {
+  text-decoration: underline;
+}
+
+.license__span:active {
+  text-decoration: underline;
+  color: var(--color-green-400);
+  text-decoration-color: var(--color-green-400);
+}
+
+.form__buttons {
+  display: flex;
+  width: 500px;
+  height: 58px;
+  gap: 30px;
+}
+
+.button__find-tour {
+  width: 235px;
+  height: 58px;
+  padding: 15px 30px;
+  gap: 10px;
+  border-radius: 10px;
+  border: none;
+  background: var(--color-green-400);
+  color: var(--color-white);
+}
+
+.button__find-tour:hover {
+  cursor: pointer;
+  background: var(--color-green-300);
+}
+
+.button__find-tour:active {
+  background: var(--color-green-200);
+}
+
+.button__reset {
+  width: 235px;
+  height: 58px;
+  padding: 15px 30px;
+  gap: 10px;
+  border-radius: 10px;
+  border: none;
+  background: var(--color-green-100);
+  color: var(--color-green-400);
+}
+
+.button__reset:hover {
+  cursor: pointer;
+  background: var(--color-gray-100);
+}
+
+.button__reset:active {
+  background: var(--color-gray-200);
+}
+
+/* Отзывы наших путешественников */
+
+.feedback__wrapper {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1005px;
+  width: 1170px;
+}
+
+.feedback__paragraph {
+  margin: 0 auto;
+  text-align: center;
+  width: 529px;
+  height: 232px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feedback__subtitle {
+  margin: 0 auto;
+  width: 418px;
+  height: 56px;
+  color: var(--color-gray-300);
+}
+
+
+.feedback__cards {
+  width: 1170px;
+  height: 673px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.feedback__card {
+  background: var(--color-beige-200);
+  width: 570px;
+  height: 673px;
+  border-radius: 50px;
+}
+
+.feedback__card-container {
+  padding: 40px;
+  width: calc((100% - 40px) - 40px);
+  height: calc((100% - 40px) - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feedback-card__person {
+  display: flex;
+  justify-content: space-between;
+  height: 145px;
+  width: 490px;
+  align-items: end;
+}
+
+.feedback-card__person-info {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.person-info__tour {
+  color: var(--color-gray-300);
+}
+
+.card-1 .person-info__photo {
+  background: url("./assets/review_photo-1.jpg") no-repeat center center;
+  background-size: contain;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}
+
+.card-2 .person-info__photo {
+  background: url("./assets/review_photo-2.jpg") no-repeat center center;
+  background-size: contain;
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+}
+
+/* ФОТОГРАФИИ ПУТЕШЕСТВИЙ */
+
+.journey-photos__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%; 
+  max-width: 1920px;
+  height: 1222px;
+  gap: 100px;
+}
+
+.journey-photos__paragraph {
+  margin: 0 auto;
+  text-align: center;
+  width: 723px;
+  height: 159px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.journey-photos__title {
+  margin: 0 auto;
+  width: 723px;
+  height: 73px;
+}
+
+.journey-photos__subtitle {
+  margin: 0 auto;
+  width: 418px;
+  height: 56px;
+  color: var(--color-gray-300);
+}
+
+.journey-photos__album {
+  margin: 0 auto;
+  max-width: 1920px;
+  max-height: 963px;
+  height: 100%;
+  padding: 0px 15px;
+  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.journey-photos__album-photo {
+  width: 444px;
+  height: 301px;
+  border-radius: 50px;
+}
+
+.journey-photos__album-photo:nth-child(n+5):nth-child(-n+9) {
+  width: 349px;
+  height: 301px;
+  border-radius: 50px;
+}
+
+.photo-1 {
+  background: url("./assets/travel\ photo-1.jpg") no-repeat center center;
+  background-size: contain;
+}
+
+.photo-2 {
+  background: url("./assets/travel\ photo-2.jpg") no-repeat center center;
+  background-size: contain;
+}
+
+.photo-3 {
+  background: url("./assets/travel\ photo-3.jpg") no-repeat center center;
+  background-size: contain;
+}
+
+.photo-4 {
+  background: url("./assets/travel\ photo-4.jpg") no-repeat center center;
+  background-size: contain;
+}
+
+.photo-5 {
+  background: url("./assets/travel\ photo-5.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.photo-6 {
+  background: url("./assets/travel\ photo-6.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.photo-7 {
+  background: url("./assets/travel\ photo-7.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.photo-8 {
+  background: url("./assets/travel\ photo-8.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.photo-9 {
+  background: url("./assets/travel\ photo-9.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.photo-10 {
+  background: url("./assets/travel\ photo-10.jpg") no-repeat center center;
+  background-size: contain;
+}
+
+.photo-11 {
+  background: url("./assets/travel\ photo-11.jpg") no-repeat center center;
+  background-size: contain;
+}
+
+.photo-12 {
+  background: url("./assets/travel\ photo-12.jpg") no-repeat center center;
+  background-size: contain;
+}
+.photo-13 {
+  background: url("./assets/travel\ photo-13.jpg") no-repeat center center;
+  background-size: contain;
+}
+
+/* ИСТОРИИ ПУТЕШЕСТВИЙ */
+.journey-history__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%; 
+  max-width: 1920px;
+  height: 2060px;
+  gap: 100px;
+}
+
+.journey-history__paragraph {
+  margin: 0 auto;
+  text-align: center;
+  width: 615px;
+  height: 159px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.journey-history__title {
+  margin: 0 auto;
+  width: 615px;
+  height: 73px;
+}
+
+.journey-history__subtitle {
+  margin: 0 auto;
+  width: 418px;
+  height: 56px;
+  color: var(--color-gray-300);
+}
+
+.journey-history__cards {
+  margin: 0 auto;
+  width: 1170px;
+height: 1801px;
+gap: 50px;
+display: flex;
+flex-direction: column;
+}
+
+.journey-history__card {
+  width: 1170px;
+  height: 567px;
+  border-radius: 50px;
+  color: var(--color-white);
+  overflow: hidden;
+  position: relative; 
+  transition: transform 300ms ease; 
+}
+
+.journey-history__card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 300ms ease; 
+  z-index: 0;
+  transform: scale(1); 
+}
+
+.journey-card-1::before {
+  background:linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("./assets/story photo-1.jpg") no-repeat center center;
+  background-size: contain;
+}
+.journey-card-2::before {
+  background:linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("./assets/story photo-2.jpg") no-repeat center center;
+  background-size: contain;
+}
+.journey-card-3::before {
+  background:linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("./assets/story photo-3.jpg") no-repeat center center;
+  background-size: contain;
+}
+
+.journey-history__card:hover::before {
+  transform: scale(1.2); 
+}
+
+.journey-history__card-container {
+  padding: 60px;
+  width: calc((100% - 60px) - 60px);
+  height: calc((100% - 60px) - 60px);
+  display: flex;
+  flex-direction: column;
+  gap: 85px;
+  position: relative;
+  z-index: 1;
+}
+
+.card__paragraph {
+  display: flex;
+  flex-direction: column;
+  width: 1170px;
+height: 394px;
+gap: 37px;
+}
+.card__title {
+  width: 554px;
+height: 43px;
+}
+.card__subtitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 554px;
+height: 224px;
+}
+.card__subtitle-list {
+  padding-left: 24px;
+}
+
+.journey-history-card__learn-more {
+  display: flex;
+height: 28px;
+justify-content: space-between;
+}
+
+.card__learn-more {
+  width: 159px;
+  height: 28px;
+  gap: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 20px; 
+  border-radius: 50px; 
+}
+
+.journey-history__card:hover .card__learn-more {
+  background: var(--color-green-400); 
+  width: 159px;
+  height: 28px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.journey-history__card:hover .card__learn-more:active {
+  background: var(--color-orange-200); 
+}
+
+.card-learn-more__arrow {
+  fill: var(--color-white);
+  margin-top: 1px;
+}
+
+.card-media__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 322px;
+height: 28px;
+gap: 35px;
+  list-style-type: none;
+}
+
+.card-media__icons li:hover {
+  text-decoration: underline var(--color-white);
+  cursor: pointer;
+}
+.card-media__icons li:active {
+  text-decoration: underline var(--color-orange-200);
+  color: var(--color-orange-200);
+}
+
+/* ПРИГЛАШЕНИЕ */
+
+.invite__wrapper {
+  margin: 0 auto;
+  width: 771px;
+height: 370px;
+gap: 30px;
+display: flex;
+}
+
+.img__invite {
+  width: 370px;
+height: 370px;
+border-radius: 50px;
+overflow: hidden;
+background: url("./assets/footer\ photo.jpg") no-repeat center center;
+background-size: contain;
+}
+
+.invite__paragraph {
+  margin: 104px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center;
+  width: 371px;
+height: 162px;
+gap: 20px;
+}
+
+.invite__title,
+.invite__subtitle {
+  margin: 0 auto;
+}
+
+.invite__subtitle {
+  color: var(--color-gray-300);
+}
+.invite__subtitle span {
+  color: var(--color-black);
+}
+.invite__subtitle span:hover {
+  text-decoration: underline;
+}
+.invite__subtitle span:active {
+  text-decoration: underline var(--color-green-400);
+  color: var(--color-green-400);
+}
+
+/* FOOTER */
+
+footer {
+  background: var(--color-beige-200);
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.footer__container {
+  min-width: 1168px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer__paragraph .p-normal {
+  color: var(--color-gray-300);
+}
+
+.footer-list__icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 419px;
+  height: 28px;
+  list-style-type: none;
+}
+
+.footer-list__icons li:hover {
+  text-decoration: underline var(--color-black);
+  text-underline-offset: 5px;
+  cursor: pointer;
+}
+
+.footer-list__icons li:active {
+  text-decoration: underline var(--color-orange-200);
+  color: var(--color-orange-200);
+}
+
+.footer-list__icons li:before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: text-top;
+  padding-right: 10px;
+}
+
+.footer__icon-1:before {
+  background-image: url("./assets/inst.png");
+}
+
+.footer__icon-2:before {
+  background-image: url("./assets/fb.png");
+}
+
+.footer__icon-3:before {
+  background-image: url("./assets/vk.png");
+}
