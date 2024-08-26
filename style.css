@@ -149,6 +149,10 @@ main {
   height: 8924px;
 }
 
+.vp-1024px {
+  display: none;
+}
+
 /* PREVIEW */
 
 .background-img {

@@ -68,11 +68,21 @@
     height: auto;
   }
 
+  
   /* MAIN */
-
+  
   main {
     /* height: auto; */
     height: 7994px;
+  }
+  
+  .vp-1024px {
+    width: 100%;
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 95px;
   }
 
   /* PREVIEW */

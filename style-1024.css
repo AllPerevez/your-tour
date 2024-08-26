@@ -6,6 +6,14 @@
 
   /* HEADER */
 
+  .vp-1024px {
+    display: none;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    height: 88px;
+  }
+
   .header__wrapper {
     min-width: 1024px;
   }
