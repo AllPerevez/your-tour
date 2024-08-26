@@ -155,7 +155,7 @@ main {
   height: 831px;
   width: 100%;
   background: url("./assets/header-img.jpg") no-repeat center center;
-  background-size: contain;
+  background-size: cover;
   position: absolute;
   top: 0;
   z-index: -3;

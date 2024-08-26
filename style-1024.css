@@ -12,6 +12,7 @@
 
   .header__container {
     min-width: 910px;
+    margin: 0 auto;
   }
 
   .header__paragraph {
@@ -21,6 +22,7 @@
 
   .header-list__items {
     min-width: 408px;
+    width: 100%;
   }
 
   /* MAIN */
