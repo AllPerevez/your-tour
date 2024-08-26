@@ -254,11 +254,10 @@ margin-top: 30px;
     .button__reset {
       width: 134px;
       height: 47px;
-      padding: 10px 30px;
+      padding: 10px 15px;
       gap: 10px;
       border-radius: 10px;
     }
-    
     
 
   /* Отзывы наших путешественников */
