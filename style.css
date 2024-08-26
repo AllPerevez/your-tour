@@ -476,8 +476,8 @@ select,
   background-color: var(--color-beige-200);
   cursor: pointer;
 }
-.active-variant input {
-  color: var(--color-black);
+select.active-variant {
+  color: var(--color-black) !important;
 }
 
 

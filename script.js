@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const selectedValue = this.value;
     if (selectedValue !== "0") {
       this.classList.toggle("active-variant");
+    } else {
+      this.classList.toggle("active-variant");
     }
   });
 });
