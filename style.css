@@ -29,8 +29,9 @@ body {
 }
 
 #wrapper {
+  position: relative;
   display: grid;
-  grid-template-rows: 88px 1fr 88px;
+  grid-template-rows: 1fr 88px;
   position: relative;
   margin-top: -5px;
 }
@@ -76,7 +77,7 @@ h3 {
 /* HEADER */
 
 header {
-  position: sticky;
+  position: absolute;
   top: 0;
 }
 
@@ -146,12 +147,13 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 8924px;
+  gap: 135px;
+  height: auto;
 }
 
-.vp-1024px {
+/* .vp-1024px {
   display: none;
-}
+} */
 
 /* PREVIEW */
 
