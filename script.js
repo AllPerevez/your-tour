@@ -19,14 +19,10 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.remove("header__ordinary");
       logo.src = "./assets/YourTour-dark.png";
       header.classList.add("header__fix");
-      // if (innerWidth <= 1024 ) {
-      //   headerMiddle.style.display = "block";
-      // } 
     } else {
       header.classList.remove("header__fix");
       logo.src = "./assets/YourTour.png";
       header.classList.add("header__ordinary");
-      // headerMiddle.style.display = "none";
     }
 
   });

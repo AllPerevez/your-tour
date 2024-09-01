@@ -29,9 +29,8 @@ body {
 }
 
 #wrapper {
-  position: relative;
   display: grid;
-  grid-template-rows: 1fr 88px;
+  grid-template-rows: 88px 1fr 88px;
   position: relative;
   margin-top: -5px;
 }
@@ -76,18 +75,14 @@ h3 {
 
 /* HEADER */
 
-header {
-  position: absolute;
-  top: 0;
-}
-
 .header__ordinary {
-  /* background: var(--color-black); */
   color: var(--color-white);
   transition: background 0.3s, color 0.3s;
 }
 
 .header__fix {
+  position: sticky;
+  top: 0;
   background: var(--background-header-fix);
   color: var(--color-black);
   transition: background 0.3s, color 0.3s;
@@ -147,13 +142,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  gap: 135px;
-  height: auto;
+  height: 8924px;
 }
-
-/* .vp-1024px {
-  display: none;
-} */
 
 /* PREVIEW */
 
@@ -161,7 +151,7 @@ main {
   height: 831px;
   width: 100%;
   background: url("./assets/header-img.jpg") no-repeat center center;
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   top: 0;
   z-index: -3;
@@ -478,8 +468,8 @@ select,
   background-color: var(--color-beige-200);
   cursor: pointer;
 }
-select.active-variant {
-  color: var(--color-black) !important;
+.active-variant input {
+  color: var(--color-black);
 }
 
 
