@@ -20,6 +20,11 @@
   --color-beige-200: #f4f0e9;
   --color-beige-100: #f9f7f4;
   --background-header-fix: #f3efe899;
+  --linear-gradient: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%);
+  --linear-gradient-card: linear-gradient(360deg,
+  rgba(0, 0, 0, 0.4) 0%,
+  rgba(0, 0, 0, 0.06) 48.44%,
+  rgba(0, 0, 0, 0.5) 100%);
 }
 
 body {
@@ -98,23 +103,26 @@ h3 {
 }
 
 .header__container {
-  min-width: 1168px;
+  width: 100%;
+  margin: 0 20%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .header__paragraph {
-  width: 181.84px;
-  height: 30.24px;
+  width: 19%;
+}
+
+.header__list {
+  width: 40%;
 }
 
 .header-list__items {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-width: 468px;
-  height: 28px;
+  width: 100%;
   list-style-type: none;
 }
 
@@ -142,7 +150,8 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 8924px;
+  gap: 135px;
+  height: auto;
 }
 
 /* PREVIEW */
@@ -150,8 +159,8 @@ main {
 .background-img {
   height: 831px;
   width: 100%;
-  background: url("./assets/header-img.jpg") no-repeat center center;
-  background-size: contain;
+  background: var(--linear-gradient-card), url("./assets/background.png") no-repeat center center;
+  background-size: cover;
   position: absolute;
   top: 0;
   z-index: -3;
@@ -306,10 +315,7 @@ main {
 }
 
 .choose-your-tour__card-paragraph {
-  background: linear-gradient(360deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.06) 48.44%,
-      rgba(0, 0, 0, 0.5) 100%);
+  background: var(--linear-gradient-card);
   height: calc((100% - 50px) - 50px);
   color: var(--color-white);
   display: flex;
@@ -468,8 +474,8 @@ select,
   background-color: var(--color-beige-200);
   cursor: pointer;
 }
-.active-variant input {
-  color: var(--color-black);
+select.active-variant {
+  color: var(--color-black) !important;
 }
 
 
@@ -899,15 +905,15 @@ flex-direction: column;
 }
 
 .journey-card-1::before {
-  background:linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("./assets/story photo-1.jpg") no-repeat center center;
+  background: var(--linear-gradient), url("./assets/story photo-1.jpg") no-repeat center center;
   background-size: contain;
 }
 .journey-card-2::before {
-  background:linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("./assets/story photo-2.jpg") no-repeat center center;
+  background: var(--linear-gradient), url("./assets/story photo-2.jpg") no-repeat center center;
   background-size: contain;
 }
 .journey-card-3::before {
-  background:linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("./assets/story photo-3.jpg") no-repeat center center;
+  background: var(--linear-gradient), url("./assets/story photo-3.jpg") no-repeat center center;
   background-size: contain;
 }
 
@@ -1005,6 +1011,7 @@ gap: 35px;
 
 .invite__wrapper {
   margin: 0 auto;
+  margin-bottom: 135px;
   width: 771px;
 height: 370px;
 gap: 30px;
@@ -1064,7 +1071,8 @@ footer {
 }
 
 .footer__container {
-  min-width: 1168px;
+  max-width: 1168px;
+  width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
