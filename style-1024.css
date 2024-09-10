@@ -1,47 +1,37 @@
-@media screen and (max-width: 1024px) {
-
+@media screen and (max-width: 1550px) {
   #wrapper {
     overflow: hidden;
   }
 
   /* HEADER */
 
-  .vp-1024px {
-    display: none;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    height: 88px;
-  }
-
-  .header__wrapper {
-    min-width: 1024px;
-  }
-
   .header__container {
-    min-width: 910px;
-    margin: 0 auto;
-  }
-
-  .header__paragraph {
-    min-width: 181.84px;
-    height: 30.24px;
+    max-width: 910px;
+    width: 100%;
+    margin: 0 calc(100vw / 20);
   }
 
   .header-list__items {
-    min-width: 408px;
+    margin: 0 auto;
+    max-width: 408px;
     width: 100%;
   }
 
   /* MAIN */
 
   .background-img {
-    background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.06) 48.44%, rgba(0, 0, 0, 0.5) 100%), url("./assets/background.png") no-repeat center center;
+    background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.06) 48.44%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url("./assets/background.png") no-repeat center center;
     background-size: cover;
   }
 
   main {
-    height: 9785px;
+    /* height: 9785px; */
   }
 
   /* PREVIEW */
@@ -122,13 +112,13 @@
   }
 
   .form__container input,
-    .form__container select,
-    .form__comment textarea {
-        width: 100%; 
-        max-width: 368px; 
-        box-sizing: border-box; 
-        padding: 20px; 
-    }
+  .form__container select,
+  .form__comment textarea {
+    width: 100%;
+    max-width: 368px;
+    box-sizing: border-box;
+    padding: 20px;
+  }
 
   .form__name,
   .form__direction,
@@ -140,8 +130,7 @@
     width: 368px;
   }
 
-  .form__comment
-  textarea {
+  .form__comment textarea {
     max-width: 798px;
     width: 100%;
   }
@@ -190,7 +179,7 @@
     background-size: cover;
   }
 
-  .journey-photos__album-photo:nth-child(n+5):nth-child(-n+9) {
+  .journey-photos__album-photo:nth-child(n + 5):nth-child(-n + 9) {
     width: 231px;
     height: 301px;
   }
@@ -201,13 +190,10 @@
     display: none;
   }
 
-
-
   /* ИСТОРИИ ПУТЕШЕСТВИЙ */
   .journey-history__wrapper {
     max-width: 1024px;
   }
-
 
   .journey-history__cards {
     width: 100%;
@@ -222,21 +208,35 @@
   .journey-card-2::before,
   .journey-card-3::before {
     background-size: cover;
-
   }
 
   .journey-card-1::before {
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("./assets/story\ photo-1\ \(1024px\).jpg") no-repeat center center;
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url("./assets/story\ photo-1\ \(1024px\).jpg") no-repeat center center;
     background-size: cover;
   }
 
   .journey-card-2::before {
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("./assets/story\ photo-2\ \(1024px\).jpg") no-repeat center center;
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url("./assets/story\ photo-2\ \(1024px\).jpg") no-repeat center center;
     background-size: cover;
   }
 
   .journey-card-3::before {
-    background: linear-gradient(270deg, rgba(0, 0, 0, 0) 0.01%, rgba(0, 0, 0, 0.2) 100%), url("./assets/story\ photo-3\ \(1024px\).jpg") no-repeat center center;
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url("./assets/story\ photo-3\ \(1024px\).jpg") no-repeat center center;
     background-size: cover;
   }
 
@@ -248,13 +248,14 @@
     width: 100%;
   }
 
-
   /* FOOTER */
   .footer__container {
-    min-width: 918px;
+    max-width: 910px;
+    width: 100%;
+    margin: 0 calc(100vw / 20);
   }
 
   .footer-list__icons {
-    min-width: 419px;
+    max-width: 419px;
   }
 }

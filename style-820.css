@@ -1,0 +1,260 @@
+@media screen and (max-width: 900px) {
+  #wrapper {
+    overflow: hidden;
+  }
+
+  /* HEADER */
+
+  .header__container {
+    max-width: 810px;
+    width: 90%;
+    margin: 0 10%;
+  }
+
+  .header-list__items {
+    display: none;
+  }
+
+  /* MAIN */
+
+  .background-img {
+    background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.06) 48.44%,
+        rgba(0, 0, 0, 0.5) 100%
+      ),
+      url("./assets/background.png") no-repeat center center;
+    background-size: cover;
+  }
+
+  main {
+    /* height: 9785px; */
+  }
+
+  /* PREVIEW */
+
+  .preview {
+    margin: 0 auto;
+    height: 743px;
+  }
+
+  .preview__wrapper {
+    width: 100%;
+  }
+
+  .preview__title {
+    max-width: 700px;
+    width: 90%;
+    height: auto;
+  }
+
+  .preview__paragraph {
+    width: 442px;
+    height: 56px;
+  }
+
+  /* ВЫБЕРИ СВОЙ ТУР */
+
+  .choose-tour-tour__wrapper {
+    width: 1000px;
+    height: 1871px;
+  }
+
+  .choose-your-tour__cards {
+    margin: 0 auto;
+    width: calc(100% - 53px);
+    height: 1629px;
+    justify-content: space-around;
+  }
+
+  .choose-your-tour__card {
+    width: 450px;
+    height: 531px;
+    border-radius: 50px;
+  }
+
+  .choose-your-tour__card::before {
+    background-size: cover;
+  }
+
+  .card-paragraph__container {
+    width: 350px;
+  }
+
+  /* СОБЕРИ СВОЙ ТУР */
+
+  .collect-your-tour_wrapper {
+    max-width: 918px;
+    width: calc(100% - 120px);
+    padding: 0 60px;
+    height: 1225px;
+    gap: 100px;
+  }
+
+  /* ФОРМА  */
+
+  .collect-your-tour__form {
+    width: 100%;
+    height: 966px;
+  }
+
+  .form__container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 798px;
+    gap: 20px;
+  }
+
+  .form__container label {
+    width: auto;
+  }
+
+  .form__container input,
+  .form__container select,
+  .form__comment textarea {
+    width: 100%;
+    max-width: 368px;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+
+  .form__name,
+  .form__direction,
+  .form__email,
+  .form_tel,
+  .form__date-from,
+  .form__date-till {
+    flex: none;
+    width: 368px;
+  }
+
+  .form__comment textarea {
+    max-width: 798px;
+    width: 100%;
+  }
+
+  /* Отзывы наших путешественников */
+
+  .feedback__wrapper {
+    max-width: 1024px;
+    height: 1173px;
+    width: 100%;
+  }
+
+  .feedback__cards {
+    justify-content: center;
+    width: 100%;
+    height: 841px;
+    gap: 18px;
+  }
+
+  .feedback__card {
+    width: 450px;
+    height: 841px;
+  }
+
+  .feedback-card__person {
+    width: 370px;
+  }
+
+  /* ФОТОГРАФИИ ПУТЕШЕСТВИЙ */
+
+  .journey-photos__wrapper {
+    width: 100%;
+    max-width: 1024px;
+  }
+
+  .journey-photos__album {
+    justify-content: center;
+    max-width: 100%;
+    max-height: 963px;
+    gap: 15px;
+  }
+
+  .journey-photos__album-photo {
+    width: 314.67px;
+    height: 300px;
+    background-size: cover;
+  }
+
+  .journey-photos__album-photo:nth-child(n + 5):nth-child(-n + 9) {
+    width: 231px;
+    height: 301px;
+  }
+
+  .photo-2,
+  .photo-7,
+  .photo-13 {
+    display: none;
+  }
+
+  /* ИСТОРИИ ПУТЕШЕСТВИЙ */
+  .journey-history__wrapper {
+    max-width: 1024px;
+  }
+
+  .journey-history__cards {
+    width: 100%;
+  }
+
+  .journey-history__card {
+    margin: 0 auto;
+    width: 918px;
+  }
+
+  .journey-card-1::before,
+  .journey-card-2::before,
+  .journey-card-3::before {
+    background-size: cover;
+  }
+
+  .journey-card-1::before {
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url("./assets/story\ photo-1\ \(1024px\).jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .journey-card-2::before {
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url("./assets/story\ photo-2\ \(1024px\).jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .journey-card-3::before {
+    background: linear-gradient(
+        270deg,
+        rgba(0, 0, 0, 0) 0.01%,
+        rgba(0, 0, 0, 0.2) 100%
+      ),
+      url("./assets/story\ photo-3\ \(1024px\).jpg") no-repeat center center;
+    background-size: cover;
+  }
+
+  .journey-history__card-container {
+    gap: 50px;
+  }
+
+  .card__paragraph {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer__container {
+    max-width: 910px;
+    width: 100%;
+    margin: 0 calc(100vw / 20);
+  }
+
+  .footer-list__icons {
+    max-width: 419px;
+  }
+}
