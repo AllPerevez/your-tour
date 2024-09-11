@@ -224,16 +224,21 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 1334px;
-  width: 1170px;
+  height: auto;
+  max-width: 1170px;
+  width: 100%;
+  gap: 100px;
 }
 
 .choose-your-tour__paragraph {
   margin: 0 auto;
   text-align: center;
-  width: 700px;
-  height: 142px;
+  max-width: 700px;
+  width: 100%;
+  max-height: 142px;
+  height: 100%;
   display: flex;
+  gap: 35px;
   flex-direction: column;
   justify-content: space-between;
 }
@@ -243,6 +248,7 @@ main {
   justify-content: space-between;
   align-items: center;
   max-width: 700px;
+  width: 100%;
   height: 34px;
   list-style-type: none;
 }
@@ -261,15 +267,18 @@ main {
 }
 
 .choose-your-tour__cards {
-  width: 1170px;
-  height: 1092px;
+  max-width: 1170px;
+  width: 100%;
+  height: auto;
+  gap: 30px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .choose-your-tour__card {
-  width: 370px;
+  max-width: 370px;
+  width: 100%;
   height: 531px;
   border-radius: 50px;
   overflow: hidden;

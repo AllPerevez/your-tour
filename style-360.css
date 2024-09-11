@@ -54,9 +54,9 @@
   }
 
   .header__container {
-    max-width: 317px;
-    height: auto;
-    justify-content: center;
+    min-width: 344px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
     align-items: center;
   }
 
@@ -83,20 +83,21 @@
   .preview {
     max-width: 360px;
     margin: 0 auto;
-    height: 365px;
+    max-height: 365px;
   }
 
   .preview__wrapper {
     margin-top: 28px;
     width: 100%;
   }
-
+  
   .preview__title {
     width: 100%;
     height: auto;
   }
 
   .preview__paragraph {
+    max-width: 360px;
     width: 90%;
     height: auto;
   }
@@ -108,13 +109,15 @@ margin-top: 30px;
   /* ВЫБЕРИ СВОЙ ТУР */
 
   .choose-tour-tour__wrapper {
-    height: 2174px;
-    width: 360px;
+    /* height: 2174px; */
+    max-width: 360px;
+    gap: 50px;
   }
 
   .choose-your-tour__paragraph {
     width: 360px;
     height: 124px;
+    gap: 30px;
   }
 
   .choose-your-tour__list {
@@ -126,20 +129,24 @@ margin-top: 30px;
   }
 
   .choose-your-tour__cards {
-    width: 318px;
-    height: 1998px;
+    min-width: 318px;
+    width: 100%;
+    height: auto;
   }
 
   .choose-your-tour__card {
-    width: 318px;
-    height: 318px;
+    max-width: 318px;
+    min-width: 318px;
+    max-height: 318px;
+    min-height: 318px;
+    height: auto;
     border-radius: 20px;
   }
 
   .choose-your-tour__card-paragraph {
     padding: 25px;
     height: calc(100% - 50px);
-    width: 100%;
+    width: calc(100% - 50px);
   }
 
   .card-paragraph__container {

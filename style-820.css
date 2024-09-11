@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 900px) and (min-width: 480px)  {
   #wrapper {
     overflow: hidden;
   }
@@ -56,31 +56,13 @@
 
   /* ВЫБЕРИ СВОЙ ТУР */
 
-  .choose-tour-tour__wrapper {
-    width: 1000px;
-    height: 1871px;
-  }
-
-  .choose-your-tour__cards {
-    margin: 0 auto;
-    width: calc(100% - 53px);
-    height: 1629px;
-    justify-content: space-around;
-  }
-
-  .choose-your-tour__card {
-    width: 450px;
-    height: 531px;
+.choose-your-tour__card {
+  max-width: 800px;
+    width: 100%;
+    min-height: 970px;
+    height: auto;
     border-radius: 50px;
-  }
-
-  .choose-your-tour__card::before {
-    background-size: cover;
-  }
-
-  .card-paragraph__container {
-    width: 350px;
-  }
+}
 
   /* СОБЕРИ СВОЙ ТУР */
 
